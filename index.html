@@ -2,6 +2,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -103,9 +104,9 @@
 
   /* DESC */
   .desc{display:grid;gap:10px}
-  .drow{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 14px}
-  .drow .L{font-size:22px;font-weight:900;color:var(--teal);line-height:1}
-  .drow .L small{display:block;font-size:10.5px;color:var(--muted);font-weight:700;margin-top:4px}
+  .drow{display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 14px}
+  .drow .L{font-size:15px;font-weight:900;color:var(--teal);line-height:1.15;word-break:keep-all}
+  .drow .L small{display:block;font-size:11px;color:var(--muted);font-weight:700;margin-top:3px}
   .drow h4{margin:0 0 3px;font-size:14px;color:var(--navy)}
   .drow p{margin:0;font-size:13px;color:var(--muted)}
   .drow em{color:var(--ink);font-style:normal}
@@ -117,7 +118,7 @@
 
   @media (max-width:430px){
     .hero h1{font-size:22px}
-    .drow{grid-template-columns:54px 1fr}
+    .drow{grid-template-columns:86px 1fr}
   }
   @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 
@@ -194,9 +195,11 @@
     <nav class="tabs" id="tabs">
       <a href="#safety" class="active">心理的安全性</a>
       <a href="#review">5回の復習</a>
-      
       <a href="#flow">研修当日の流れ</a>
+      <a href="#work">グループワーク</a>
       <a href="#desc">DESC法</a>
+      <a href="#points">問いかけ</a>
+      <a href="#qa">Q&amp;A</a>
       <button type="button" class="stog" id="stog" aria-expanded="false" aria-controls="searchbar"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>検索</button>
     </nav>
   </div>
@@ -505,27 +508,76 @@
     <li class="sx"><span class="t">20–25分</span><span class="dot"></span><h3>感想・学びの共有</h3><p>ワークの感想を全体で共有。</p></li>
     <li class="sx"><span class="t">25–28分</span><span class="dot"></span><h3>行動宣言を貼って締め</h3><p>ワークでの学びから、次に試す「小さな一歩」を書く。</p></li>
   </ul>
-  <div class="reveal" style="margin-top:18px;background:var(--amber-soft);border:1px solid #ecd9b8;border-radius:14px;padding:16px 17px">
-    <h3 style="margin:0 0 12px;font-size:15.5px;color:var(--amber)">⭐️ アドバイスする側の心構え</h3>
-    <div style="display:flex;flex-direction:column;gap:11px">
-      <p style="margin:0;font-size:14px;color:var(--ink);line-height:1.75"><strong style="color:var(--navy)">I'm OK, You're OK.</strong> 自分も相手もOK。話に出てくる“その人”も裁かない。</p>
-      <p style="margin:0;font-size:14px;color:var(--ink);line-height:1.75">愚痴に乗っかって相手を悪者にし、スッキリ（カタルシス）して終わり——では意味がない。ゴールは<strong style="color:var(--navy)">「次にどう言うか」を一緒に探す</strong>こと。</p>
-      <p style="margin:0;font-size:14px;color:var(--ink);line-height:1.75">「そんなことでイライラして」「こう考えればいいよ」と、<strong style="color:var(--navy)">批判や上から目線で入らない。</strong></p>
-      <p style="margin:0;font-size:14px;color:var(--ink);line-height:1.75"><strong style="color:var(--navy)">不完全を受け入れる勇気。</strong>自分も相手も、粗だらけで当たり前。</p>
-      <p style="margin:0;font-size:14px;color:var(--ink);line-height:1.75">医療職は“気づいて直す”プロ。でも、<strong style="color:var(--navy)">相手の良いところもたくさんある！</strong></p>
-    </div>
-  </div>
 
 </section>
 
-<section id="desc" class="wrap reveal">
+
+<!-- ============ グループワークのやり方（当日） ============ -->
+<section id="work" class="wrap reveal">
   <span class="badge day">当日</span>
-  <h2 class="title">怒りを抜いて、アサーティブに伝える<br>—— アサーティブコミュニケーションの型＝DESC法</h2>
-  <div class="desc">
-    <div class="drow sx"><div class="L">Describe<small>描写</small></div><div><h3>事実を、客観的に伝える</h4><p><em>「先週の会議で、資料が事前にありませんでした」</em></p></div></div>
-    <div class="drow sx"><div class="L">Express<small>表現</small></div><div><h3>“私”を主語に、気持ちを表現する</h4><p><em>「確認の時間が足りず不安でした」</em></p></div></div>
-    <div class="drow sx"><div class="L">Specify<small>提案</small></div><div><h3>してほしいことを、具体的に提案する</h4><p><em>「次回は事前に共有してもらえますか」</em></p></div></div>
-    <div class="drow sx"><div class="L">Choose<small>選択</small></div><div><h3>相手のYesとNoの時の返答を想定し、備える</h4><p><em>Yes→「ありがとうございます、安心です」、No→「当日の流れを口頭だけでも確認できますか？」</em></p></div></div>
+  <h2 class="title">グループワークのやり方</h2>
+  <p class="sub">タイムラインの「9–20分」がこのパート。1例を全員で扱う。進行＆時計係を1人決める。コツは、<strong>周囲が助言するよりも、問いで本人が自ら気づくように話を進める</strong>こと。</p>
+
+  <div id="desc" class="sx" style="scroll-margin-top:108px;margin:0 0 22px">
+    <h3 style="margin:0 0 4px;font-size:16px;color:var(--navy)">目指す形：DESC法（言い換えの“型”＝記入例）</h3>
+    <p style="margin:0 0 12px;font-size:13.5px;color:var(--muted)">モヤッとした思いを、この型に当てはめて一文に。下の3手は、ここに向かうための道筋。</p>
+    <div class="desc">
+      <div class="drow"><div class="L">Describe<small>描写</small></div><div><h4>事実を、客観的に伝える</h4><p><em>「先週の会議で、資料が事前にありませんでした」</em></p></div></div>
+      <div class="drow"><div class="L">Express<small>表現</small></div><div><h4>“私”を主語に、気持ちを表現する</h4><p><em>「確認の時間が足りず不安でした」</em></p></div></div>
+      <div class="drow"><div class="L">Specify<small>提案</small></div><div><h4>してほしいことを、具体的に提案する</h4><p><em>「次回は事前に共有してもらえますか」</em></p></div></div>
+      <div class="drow"><div class="L">Choose<small>選択</small></div><div><h4>相手のYes / Noを想定し、備える</h4><p><em>Yes→「ありがとうございます、安心です」／ No→「当日の流れを口頭だけでも確認できますか？」</em></p></div></div>
+    </div>
+  </div>
+
+  <div class="check sx" style="margin-bottom:13px">
+    <h3>① 聴ききる（受けとめる）</h3>
+    <p style="margin:0;font-size:13.8px;color:var(--ink)">最後まで聴く →「○○でモヤッとしたんだね」と気持ちを言葉で返す。ここでは助言・言い換えをしない。<strong>周囲の善意が、時に押し付けになることもある。</strong></p>
+    <p style="margin:9px 0 0;padding:8px 11px;background:var(--teal-soft);border-radius:9px;font-size:13px;color:var(--teal);font-weight:700">▶ 問い：一番モヤッとしたのはどの瞬間？ ／ どんな気持ちだった？</p>
+  </div>
+
+  <div class="check sx" style="margin-bottom:13px">
+    <h3>② ほぐす（考えさせる）</h3>
+    <p style="margin:0;font-size:13.8px;color:var(--ink)">何にモヤッとした？ 裏に「〜すべき」「白黒思考」は？ ここで出る<strong>“本当はどうしてほしかった（どうなったら良かった）”が、DESCの提案（S）の種</strong>になる。</p>
+    <p style="margin:9px 0 0;padding:8px 11px;background:var(--teal-soft);border-radius:9px;font-size:13px;color:var(--teal);font-weight:700">▶ 問い：裏に「〜すべき」はある？ ／ 本当はどうしてほしかった（どうなったら良かった）？</p>
+    <div style="margin:11px 0 0;padding:11px 13px;border:1px dashed #c8e3da;border-radius:10px;background:#fff">
+      <p style="margin:0;font-size:12px;font-weight:800;color:var(--teal);letter-spacing:.04em">アンガーログを書いた直後に</p>
+      <p style="margin:6px 0 0;font-size:13.5px;color:var(--ink);line-height:1.7">その怒り、10点満点で何点だった？ → 書き出して、いま何点？ → <strong>下がった？ 変わらない？（どっちでもOK）</strong> →（下がったなら）何が効いた？</p>
+    </div>
+  </div>
+
+  <div class="check sx" style="margin-bottom:13px">
+    <h3>③ 問いかける（言い換えへ）</h3>
+    <p style="margin:0;font-size:13.8px;color:var(--ink)"><strong>少し考え方を変えると、違う手は打てそう？</strong> そして「理想の人ならどう言う？」。まず本人が考え、一人で難しければ問いかけて皆で考える。出てきた一文を、<strong>上のDESC法</strong>で整える。</p>
+    <p style="margin:9px 0 0;padding:8px 11px;background:var(--teal-soft);border-radius:9px;font-size:13px;color:var(--teal);font-weight:700">▶ 問い：少し考え方を変えると違う手は打てそう？ ／ 理想の人ならどう言う？ ／ その一文、言えそう？</p>
+  </div>
+
+  <p class="sx" style="font-size:13px;color:var(--muted);margin:0 0 18px">約束ごと：1つの事例を全員で扱う。答えを渡すのではなく、本人が気づくのを問いで支える。うまく進めば本人から言葉が出てくる。完璧じゃなくてOK、“次に言える一文”が出れば成功。</p>
+
+  <div id="points" class="sx" style="scroll-margin-top:108px;background:var(--amber-soft);border:1px solid #ecd9b8;border-radius:14px;padding:16px 17px;margin:0 0 18px">
+    <h3 style="margin:0 0 11px;font-size:15px;color:var(--amber)">⭐️ 問いかけのポイント（注意点）</h3>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <p style="margin:0;font-size:13.8px;color:var(--ink);line-height:1.7"><strong style="color:var(--navy)">I'm OK, You're OK.</strong> 自分も相手も、話に出てくる“その人”も裁かない。</p>
+      <p style="margin:0;font-size:13.8px;color:var(--ink);line-height:1.7">助言・批判・上から目線で入らない。<strong style="color:var(--navy)">問いで気づかせる。</strong></p>
+      <p style="margin:0;font-size:13.8px;color:var(--ink);line-height:1.7">愚痴のガス抜きで終わらせない。<strong style="color:var(--navy)">ゴールは「次の一文」。</strong></p>
+      <p style="margin:0;font-size:13.8px;color:var(--ink);line-height:1.7"><strong style="color:var(--navy)">不完全を受け入れる勇気。</strong>点数が下がらなくてもOK。</p>
+      <p style="margin:0;font-size:13.8px;color:var(--ink);line-height:1.7">医療職は“気づいて直す”プロ。でも、<strong style="color:var(--navy)">相手の良いところもたくさんある！</strong></p>
+    </div>
+  </div>
+
+  <div id="qa" class="accwrap" style="scroll-margin-top:108px">
+    <details class="acc sx" data-kw="詰まった Q&amp;A 困った 愚痴 沈黙 No 提案 講師">
+      <summary><span class="acc-t">詰まった時のQ&amp;A</span></summary>
+      <div class="acc-body">
+        <p style="margin:10px 0 0;font-size:13.5px;color:var(--ink)"><strong style="color:var(--navy)">愚痴・悪口で盛り上がる</strong><br>ガス抜きで終わらせない。「で、理想の人ならどう言う？」に戻す。</p>
+        <p style="margin:12px 0 0;font-size:13.5px;color:var(--ink)"><strong style="color:var(--navy)">提案（S）が出てこない</strong><br>相手を責める要求ではなく、自分も相手も尊重した“お願い”に（I'm OK, You're OK）。「本当はどうしてほしかった（どうなったら良かった）」がそのままS。</p>
+        <p style="margin:12px 0 0;font-size:13.5px;color:var(--ink)"><strong style="color:var(--navy)">言い方が冷たい・キツい</strong><br>クッション言葉＋「私は〜」のIメッセージ。気持ち（E）は怒りではなく、奥にある感情（悲しみ・不安など）に注目して一言。</p>
+        <p style="margin:12px 0 0;font-size:13.5px;color:var(--ink)"><strong style="color:var(--navy)">相手がNoと言いそう</strong><br>DESCのC。代替案を1つ。「難しければ〜だけでも？」と食い下がる（粘る）形に。</p>
+        <p style="margin:12px 0 0;font-size:13.5px;color:var(--ink)"><strong style="color:var(--navy)">案が1つにまとまらない</strong><br>まとめなくていい。本人が「これなら言えそう」を選ぶ。</p>
+        <p style="margin:12px 0 0;font-size:13.5px;color:var(--ink)"><strong style="color:var(--navy)">解決しない・相手が変わらない</strong><br>DESCで片づかない種類もある。「離れる／上に上げる（上司・人事へ）」も正解。抱え込まない。</p>
+        <p style="margin:12px 0 0;font-size:13.5px;color:var(--ink)"><strong style="color:var(--navy)">沈黙が続く・場が固い</strong><br>受けとめ役が「それはモヤッとするね」と一言。受け止めるだけでもOK。正解を出す場じゃない、と全員で確認。</p>
+        <p style="margin:12px 0 0;font-size:13.5px;color:var(--ink)"><strong style="color:var(--navy)">困ったら（いつでも）</strong><br>場面を問わず、無理せず講師を呼んでOK。一押しします。</p>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -565,7 +617,7 @@
       var spy = new IntersectionObserver(function(entries){
         entries.forEach(function(en){ if(en.isIntersecting){ setActive(en.target.id); } });
       },{rootMargin:'-35% 0px -55% 0px'});
-      ['safety','review','glossary','flow','desc'].forEach(function(id){
+      ['safety','review','flow','work','desc','points','qa'].forEach(function(id){
         var s = document.getElementById(id); if(s) spy.observe(s);
       });
     }
